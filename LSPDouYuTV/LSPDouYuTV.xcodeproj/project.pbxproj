@@ -7,19 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F32F82B21E650DAF006500F8 /* LSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B11E650DAF006500F8 /* LSHomeViewController.swift */; };
+		F32F82B51E651352006500F8 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B41E651352006500F8 /* UIBarButtonItem+Extension.swift */; };
+		F32F82B71E651BD7006500F8 /* LSPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B61E651BD7006500F8 /* LSPageTitleView.swift */; };
+		F32F82B91E651D98006500F8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B81E651D98006500F8 /* Common.swift */; };
+		F32F82BB1E6528AD006500F8 /* LSPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82BA1E6528AD006500F8 /* LSPageContentView.swift */; };
+		F32F82BD1E652C36006500F8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82BC1E652C36006500F8 /* UIColor+Extension.swift */; };
+		F32F82BF1E6581CC006500F8 /* LSRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82BE1E6581CB006500F8 /* LSRecommendViewController.swift */; };
 		F3949C571E642C180017FCE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3949C561E642C180017FCE2 /* AppDelegate.swift */; };
 		F3949C5C1E642C180017FCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3949C5A1E642C180017FCE2 /* Main.storyboard */; };
 		F3949C5E1E642C180017FCE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3949C5D1E642C180017FCE2 /* Assets.xcassets */; };
 		F3949C611E642C180017FCE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3949C5F1E642C180017FCE2 /* LaunchScreen.storyboard */; };
+		F3E13D9D1E6445460053978C /* LSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E13D9C1E6445460053978C /* LSMainViewController.swift */; };
+		F3E13D9F1E6445AD0053978C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13D9E1E6445AD0053978C /* Home.storyboard */; };
+		F3E13DA31E6445C00053978C /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13DA21E6445C00053978C /* Follow.storyboard */; };
+		F3E13DA51E6445C60053978C /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13DA41E6445C60053978C /* Mine.storyboard */; };
+		F3E13DA71E64480E0053978C /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13DA61E64480E0053978C /* Live.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F32F82B11E650DAF006500F8 /* LSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeViewController.swift; sourceTree = "<group>"; };
+		F32F82B41E651352006500F8 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		F32F82B61E651BD7006500F8 /* LSPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPageTitleView.swift; sourceTree = "<group>"; };
+		F32F82B81E651D98006500F8 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Classes/Tools/Extension/Common.swift; sourceTree = "<group>"; };
+		F32F82BA1E6528AD006500F8 /* LSPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPageContentView.swift; sourceTree = "<group>"; };
+		F32F82BC1E652C36006500F8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F32F82BE1E6581CB006500F8 /* LSRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSRecommendViewController.swift; sourceTree = "<group>"; };
 		F3949C531E642C180017FCE2 /* LSPDouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSPDouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3949C561E642C180017FCE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3949C5B1E642C180017FCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3949C5D1E642C180017FCE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3949C601E642C180017FCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3949C621E642C180017FCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E13D9C1E6445460053978C /* LSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSMainViewController.swift; path = ../LSMainViewController.swift; sourceTree = "<group>"; };
+		F3E13D9E1E6445AD0053978C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Home.storyboard; sourceTree = "<group>"; };
+		F3E13DA21E6445C00053978C /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
+		F3E13DA41E6445C60053978C /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		F3E13DA61E64480E0053978C /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F32F82AB1E650C7D006500F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3E13D9E1E6445AD0053978C /* Home.storyboard */,
+				F32F82B11E650DAF006500F8 /* LSHomeViewController.swift */,
+				F32F82BE1E6581CB006500F8 /* LSRecommendViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F32F82AC1E650C7D006500F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F32F82AD1E650C7D006500F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F32F82AE1E650D6B006500F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F3949C5A1E642C180017FCE2 /* Main.storyboard */,
+				F3E13D9C1E6445460053978C /* LSMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F32F82AF1E650D6B006500F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F32F82B01E650D6B006500F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F32F82B61E651BD7006500F8 /* LSPageTitleView.swift */,
+				F32F82BA1E6528AD006500F8 /* LSPageContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F32F82B31E65132B006500F8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F32F82B41E651352006500F8 /* UIBarButtonItem+Extension.swift */,
+				F32F82BC1E652C36006500F8 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F3949C4A1E642C180017FCE2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,7 +136,7 @@
 			children = (
 				F3949C561E642C180017FCE2 /* AppDelegate.swift */,
 				F3E13D881E64387E0053978C /* Classes */,
-				F3949C5A1E642C180017FCE2 /* Main.storyboard */,
+				F32F82B81E651D98006500F8 /* Common.swift */,
 				F3949C5D1E642C180017FCE2 /* Assets.xcassets */,
 				F3949C5F1E642C180017FCE2 /* LaunchScreen.storyboard */,
 				F3949C621E642C180017FCE2 /* Info.plist */,
@@ -78,6 +160,7 @@
 		F3E13D891E64387E0053978C /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				F3E13DA21E6445C00053978C /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -85,6 +168,9 @@
 		F3E13D8A1E64387E0053978C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F32F82AC1E650C7D006500F8 /* Model */,
+				F32F82AD1E650C7D006500F8 /* View */,
+				F32F82AB1E650C7D006500F8 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -92,6 +178,7 @@
 		F3E13D8B1E64387E0053978C /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				F3E13DA61E64480E0053978C /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -99,6 +186,9 @@
 		F3E13D8C1E64387E0053978C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F32F82AF1E650D6B006500F8 /* Model */,
+				F32F82B01E650D6B006500F8 /* View */,
+				F32F82AE1E650D6B006500F8 /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -106,6 +196,7 @@
 		F3E13D8D1E64387E0053978C /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F3E13DA41E6445C60053978C /* Mine.storyboard */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -113,6 +204,7 @@
 		F3E13D8E1E64387E0053978C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F32F82B31E65132B006500F8 /* Extension */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -143,12 +235,14 @@
 		F3949C4B1E642C180017FCE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LS;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = lishaopeng;
 				TargetAttributes = {
 					F3949C521E642C180017FCE2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2F5MVB69AU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -179,6 +273,10 @@
 				F3949C611E642C180017FCE2 /* LaunchScreen.storyboard in Resources */,
 				F3949C5E1E642C180017FCE2 /* Assets.xcassets in Resources */,
 				F3949C5C1E642C180017FCE2 /* Main.storyboard in Resources */,
+				F3E13DA51E6445C60053978C /* Mine.storyboard in Resources */,
+				F3E13D9F1E6445AD0053978C /* Home.storyboard in Resources */,
+				F3E13DA31E6445C00053978C /* Follow.storyboard in Resources */,
+				F3E13DA71E64480E0053978C /* Live.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32F82B51E651352006500F8 /* UIBarButtonItem+Extension.swift in Sources */,
+				F32F82B21E650DAF006500F8 /* LSHomeViewController.swift in Sources */,
+				F3E13D9D1E6445460053978C /* LSMainViewController.swift in Sources */,
+				F32F82B71E651BD7006500F8 /* LSPageTitleView.swift in Sources */,
+				F32F82BB1E6528AD006500F8 /* LSPageContentView.swift in Sources */,
+				F32F82B91E651D98006500F8 /* Common.swift in Sources */,
 				F3949C571E642C180017FCE2 /* AppDelegate.swift in Sources */,
+				F32F82BF1E6581CC006500F8 /* LSRecommendViewController.swift in Sources */,
+				F32F82BD1E652C36006500F8 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +308,7 @@
 				F3949C5B1E642C180017FCE2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		F3949C5F1E642C180017FCE2 /* LaunchScreen.storyboard */ = {
@@ -311,7 +418,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2F5MVB69AU;
 				INFOPLIST_FILE = LSPDouYuTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanju.LSPDouYuTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,7 +433,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2F5MVB69AU;
 				INFOPLIST_FILE = LSPDouYuTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanju.LSPDouYuTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
