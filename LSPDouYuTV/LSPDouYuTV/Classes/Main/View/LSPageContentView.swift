@@ -131,6 +131,7 @@ extension LSPageContentView : UICollectionViewDelegate{
             sourceIndex = Int(currentOffsetX / scrollViewWidth)
             //3.计算targetIndex
             targetIndex = sourceIndex + 1
+            
             if targetIndex >= childVCs.count {
                 targetIndex = childVCs.count - 1
             }
@@ -148,6 +149,7 @@ extension LSPageContentView : UICollectionViewDelegate{
             
             //3.计算soureIndex
             sourceIndex = targetIndex + 1
+            
             if sourceIndex >= childVCs.count {
                 sourceIndex = childVCs.count - 1
             }

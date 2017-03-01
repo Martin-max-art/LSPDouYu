@@ -129,10 +129,16 @@ extension LSPageTitleView{
 extension LSPageTitleView {
     
     @objc fileprivate func titleLabelClick(tap: UITapGestureRecognizer){
-        //1.获取当前label的下标值
+        
+        //0.获取当前label的下标值
         guard let currentLabel = tap.view as? UILabel else {
             return
         }
+        
+        //1.如果是重新点击同一个Title,那么直接返回
+        if currentLabel.tag == currentIndex { return }
+        
+        
         //2.获取之前的Label
         let oldLabel = titleLabels[currentIndex]
         

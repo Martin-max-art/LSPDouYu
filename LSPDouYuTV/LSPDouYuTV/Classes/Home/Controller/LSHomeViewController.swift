@@ -24,7 +24,7 @@ class LSHomeViewController: UIViewController {
     
     fileprivate lazy var pageContentView : LSPageContentView = {[weak self] in
         //1.确定frame
-        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
         
         //2.确定所有子控制器
@@ -57,7 +57,7 @@ extension LSHomeViewController{
         
         //0.不需要调整UIScrollView的内边距
         automaticallyAdjustsScrollViewInsets = false
-        
+     
         //1.设置导航栏
         setupNavigationBar()
         

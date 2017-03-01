@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1BB2CB5BD30E63B4C0A0EA /* Pods_LSPDouYuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB6933091EDC96C40B5A3A1 /* Pods_LSPDouYuTV.framework */; };
 		F32F82B21E650DAF006500F8 /* LSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B11E650DAF006500F8 /* LSHomeViewController.swift */; };
 		F32F82B51E651352006500F8 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B41E651352006500F8 /* UIBarButtonItem+Extension.swift */; };
 		F32F82B71E651BD7006500F8 /* LSPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82B61E651BD7006500F8 /* LSPageTitleView.swift */; };
@@ -14,18 +15,33 @@
 		F32F82BB1E6528AD006500F8 /* LSPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82BA1E6528AD006500F8 /* LSPageContentView.swift */; };
 		F32F82BD1E652C36006500F8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82BC1E652C36006500F8 /* UIColor+Extension.swift */; };
 		F32F82BF1E6581CC006500F8 /* LSRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82BE1E6581CB006500F8 /* LSRecommendViewController.swift */; };
+		F32F82C21E666C6A006500F8 /* LSCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82C01E666C6A006500F8 /* LSCollectionHeaderView.swift */; };
+		F32F82C31E666C6A006500F8 /* LSCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32F82C11E666C6A006500F8 /* LSCollectionHeaderView.xib */; };
+		F32F82C61E667066006500F8 /* LSCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82C41E667066006500F8 /* LSCollectionNormalCell.swift */; };
+		F32F82C71E667066006500F8 /* LSCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32F82C51E667066006500F8 /* LSCollectionNormalCell.xib */; };
 		F3949C571E642C180017FCE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3949C561E642C180017FCE2 /* AppDelegate.swift */; };
 		F3949C5C1E642C180017FCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3949C5A1E642C180017FCE2 /* Main.storyboard */; };
 		F3949C5E1E642C180017FCE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3949C5D1E642C180017FCE2 /* Assets.xcassets */; };
 		F3949C611E642C180017FCE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3949C5F1E642C180017FCE2 /* LaunchScreen.storyboard */; };
+		F3B8092A1E6677C500AF7F00 /* LSCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B809281E6677C500AF7F00 /* LSCollectionPrettyCell.swift */; };
+		F3B8092B1E6677C500AF7F00 /* LSCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B809291E6677C500AF7F00 /* LSCollectionPrettyCell.xib */; };
+		F3B8094F1E66B93A00AF7F00 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B8094E1E66B93A00AF7F00 /* NetworkTools.swift */; };
+		F3B809521E66BCFE00AF7F00 /* LSRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B809511E66BCFE00AF7F00 /* LSRecommendViewModel.swift */; };
+		F3B809541E66C30B00AF7F00 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B809531E66C30B00AF7F00 /* NSDate+Extension.swift */; };
+		F3B809561E66C8C900AF7F00 /* LSAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B809551E66C8C900AF7F00 /* LSAnchorGroup.swift */; };
+		F3B809581E66CD1F00AF7F00 /* LSAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B809571E66CD1F00AF7F00 /* LSAnchorModel.swift */; };
 		F3E13D9D1E6445460053978C /* LSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E13D9C1E6445460053978C /* LSMainViewController.swift */; };
 		F3E13D9F1E6445AD0053978C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13D9E1E6445AD0053978C /* Home.storyboard */; };
 		F3E13DA31E6445C00053978C /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13DA21E6445C00053978C /* Follow.storyboard */; };
 		F3E13DA51E6445C60053978C /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13DA41E6445C60053978C /* Mine.storyboard */; };
 		F3E13DA71E64480E0053978C /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E13DA61E64480E0053978C /* Live.storyboard */; };
+		F3E2E1831E66F22E00CA8965 /* LSBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2E1821E66F22E00CA8965 /* LSBaseCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505666D1BAB7CF7B899D2D8B /* Pods-LSPDouYuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSPDouYuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSPDouYuTV/Pods-LSPDouYuTV.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB6933091EDC96C40B5A3A1 /* Pods_LSPDouYuTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSPDouYuTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C4974840A8D97C9283B22F /* Pods-LSPDouYuTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSPDouYuTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSPDouYuTV/Pods-LSPDouYuTV.release.xcconfig"; sourceTree = "<group>"; };
 		F32F82B11E650DAF006500F8 /* LSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeViewController.swift; sourceTree = "<group>"; };
 		F32F82B41E651352006500F8 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		F32F82B61E651BD7006500F8 /* LSPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPageTitleView.swift; sourceTree = "<group>"; };
@@ -33,17 +49,29 @@
 		F32F82BA1E6528AD006500F8 /* LSPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPageContentView.swift; sourceTree = "<group>"; };
 		F32F82BC1E652C36006500F8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F32F82BE1E6581CB006500F8 /* LSRecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSRecommendViewController.swift; sourceTree = "<group>"; };
+		F32F82C01E666C6A006500F8 /* LSCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSCollectionHeaderView.swift; path = ../../Home/View/LSCollectionHeaderView.swift; sourceTree = "<group>"; };
+		F32F82C11E666C6A006500F8 /* LSCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LSCollectionHeaderView.xib; path = ../../Home/View/LSCollectionHeaderView.xib; sourceTree = "<group>"; };
+		F32F82C41E667066006500F8 /* LSCollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCollectionNormalCell.swift; sourceTree = "<group>"; };
+		F32F82C51E667066006500F8 /* LSCollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSCollectionNormalCell.xib; sourceTree = "<group>"; };
 		F3949C531E642C180017FCE2 /* LSPDouYuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSPDouYuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3949C561E642C180017FCE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3949C5B1E642C180017FCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3949C5D1E642C180017FCE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3949C601E642C180017FCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3949C621E642C180017FCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3B809281E6677C500AF7F00 /* LSCollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCollectionPrettyCell.swift; sourceTree = "<group>"; };
+		F3B809291E6677C500AF7F00 /* LSCollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSCollectionPrettyCell.xib; sourceTree = "<group>"; };
+		F3B8094E1E66B93A00AF7F00 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		F3B809511E66BCFE00AF7F00 /* LSRecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSRecommendViewModel.swift; sourceTree = "<group>"; };
+		F3B809531E66C30B00AF7F00 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		F3B809551E66C8C900AF7F00 /* LSAnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSAnchorGroup.swift; sourceTree = "<group>"; };
+		F3B809571E66CD1F00AF7F00 /* LSAnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSAnchorModel.swift; sourceTree = "<group>"; };
 		F3E13D9C1E6445460053978C /* LSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSMainViewController.swift; path = ../LSMainViewController.swift; sourceTree = "<group>"; };
 		F3E13D9E1E6445AD0053978C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Home.storyboard; sourceTree = "<group>"; };
 		F3E13DA21E6445C00053978C /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		F3E13DA41E6445C60053978C /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
 		F3E13DA61E64480E0053978C /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
+		F3E2E1821E66F22E00CA8965 /* LSBaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +79,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1BB2CB5BD30E63B4C0A0EA /* Pods_LSPDouYuTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D7726F33F54EE3168DF19D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FB6933091EDC96C40B5A3A1 /* Pods_LSPDouYuTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A638C3589BECE6493AA4DBA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				505666D1BAB7CF7B899D2D8B /* Pods-LSPDouYuTV.debug.xcconfig */,
+				85C4974840A8D97C9283B22F /* Pods-LSPDouYuTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F32F82AB1E650C7D006500F8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +139,8 @@
 		F32F82AF1E650D6B006500F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3B809551E66C8C900AF7F00 /* LSAnchorGroup.swift */,
+				F3B809571E66CD1F00AF7F00 /* LSAnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +150,13 @@
 			children = (
 				F32F82B61E651BD7006500F8 /* LSPageTitleView.swift */,
 				F32F82BA1E6528AD006500F8 /* LSPageContentView.swift */,
+				F32F82C41E667066006500F8 /* LSCollectionNormalCell.swift */,
+				F32F82C51E667066006500F8 /* LSCollectionNormalCell.xib */,
+				F32F82C01E666C6A006500F8 /* LSCollectionHeaderView.swift */,
+				F32F82C11E666C6A006500F8 /* LSCollectionHeaderView.xib */,
+				F3B809281E6677C500AF7F00 /* LSCollectionPrettyCell.swift */,
+				F3B809291E6677C500AF7F00 /* LSCollectionPrettyCell.xib */,
+				F3E2E1821E66F22E00CA8965 /* LSBaseCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +166,7 @@
 			children = (
 				F32F82B41E651352006500F8 /* UIBarButtonItem+Extension.swift */,
 				F32F82BC1E652C36006500F8 /* UIColor+Extension.swift */,
+				F3B809531E66C30B00AF7F00 /* NSDate+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -120,6 +176,8 @@
 			children = (
 				F3949C551E642C180017FCE2 /* LSPDouYuTV */,
 				F3949C541E642C180017FCE2 /* Products */,
+				A638C3589BECE6493AA4DBA2 /* Pods */,
+				7D7726F33F54EE3168DF19D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,11 +195,20 @@
 				F3949C561E642C180017FCE2 /* AppDelegate.swift */,
 				F3E13D881E64387E0053978C /* Classes */,
 				F32F82B81E651D98006500F8 /* Common.swift */,
+				F3B8094E1E66B93A00AF7F00 /* NetworkTools.swift */,
 				F3949C5D1E642C180017FCE2 /* Assets.xcassets */,
 				F3949C5F1E642C180017FCE2 /* LaunchScreen.storyboard */,
 				F3949C621E642C180017FCE2 /* Info.plist */,
 			);
 			path = LSPDouYuTV;
+			sourceTree = "<group>";
+		};
+		F3B809501E66BCBA00AF7F00 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3B809511E66BCFE00AF7F00 /* LSRecommendViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F3E13D881E64387E0053978C /* Classes */ = {
@@ -168,6 +235,7 @@
 		F3E13D8A1E64387E0053978C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F3B809501E66BCBA00AF7F00 /* ViewModel */,
 				F32F82AC1E650C7D006500F8 /* Model */,
 				F32F82AD1E650C7D006500F8 /* View */,
 				F32F82AB1E650C7D006500F8 /* Controller */,
@@ -216,9 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3949C651E642C180017FCE2 /* Build configuration list for PBXNativeTarget "LSPDouYuTV" */;
 			buildPhases = (
+				3F8F98F528C1A19AFD0AEF9B /* [CP] Check Pods Manifest.lock */,
 				F3949C4F1E642C180017FCE2 /* Sources */,
 				F3949C501E642C180017FCE2 /* Frameworks */,
 				F3949C511E642C180017FCE2 /* Resources */,
+				37C30B705A25DFB82D4724A6 /* [CP] Embed Pods Frameworks */,
+				6D66C85CC144143DA4F64B86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,8 +343,11 @@
 			files = (
 				F3949C611E642C180017FCE2 /* LaunchScreen.storyboard in Resources */,
 				F3949C5E1E642C180017FCE2 /* Assets.xcassets in Resources */,
+				F32F82C31E666C6A006500F8 /* LSCollectionHeaderView.xib in Resources */,
+				F32F82C71E667066006500F8 /* LSCollectionNormalCell.xib in Resources */,
 				F3949C5C1E642C180017FCE2 /* Main.storyboard in Resources */,
 				F3E13DA51E6445C60053978C /* Mine.storyboard in Resources */,
+				F3B8092B1E6677C500AF7F00 /* LSCollectionPrettyCell.xib in Resources */,
 				F3E13D9F1E6445AD0053978C /* Home.storyboard in Resources */,
 				F3E13DA31E6445C00053978C /* Follow.storyboard in Resources */,
 				F3E13DA71E64480E0053978C /* Live.storyboard in Resources */,
@@ -282,6 +356,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37C30B705A25DFB82D4724A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSPDouYuTV/Pods-LSPDouYuTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F8F98F528C1A19AFD0AEF9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D66C85CC144143DA4F64B86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSPDouYuTV/Pods-LSPDouYuTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3949C4F1E642C180017FCE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -289,12 +411,21 @@
 			files = (
 				F32F82B51E651352006500F8 /* UIBarButtonItem+Extension.swift in Sources */,
 				F32F82B21E650DAF006500F8 /* LSHomeViewController.swift in Sources */,
+				F3B809581E66CD1F00AF7F00 /* LSAnchorModel.swift in Sources */,
 				F3E13D9D1E6445460053978C /* LSMainViewController.swift in Sources */,
 				F32F82B71E651BD7006500F8 /* LSPageTitleView.swift in Sources */,
+				F32F82C21E666C6A006500F8 /* LSCollectionHeaderView.swift in Sources */,
+				F3E2E1831E66F22E00CA8965 /* LSBaseCollectionViewCell.swift in Sources */,
+				F3B809561E66C8C900AF7F00 /* LSAnchorGroup.swift in Sources */,
 				F32F82BB1E6528AD006500F8 /* LSPageContentView.swift in Sources */,
+				F3B8092A1E6677C500AF7F00 /* LSCollectionPrettyCell.swift in Sources */,
 				F32F82B91E651D98006500F8 /* Common.swift in Sources */,
+				F32F82C61E667066006500F8 /* LSCollectionNormalCell.swift in Sources */,
+				F3B809541E66C30B00AF7F00 /* NSDate+Extension.swift in Sources */,
 				F3949C571E642C180017FCE2 /* AppDelegate.swift in Sources */,
+				F3B809521E66BCFE00AF7F00 /* LSRecommendViewModel.swift in Sources */,
 				F32F82BF1E6581CC006500F8 /* LSRecommendViewController.swift in Sources */,
+				F3B8094F1E66B93A00AF7F00 /* NetworkTools.swift in Sources */,
 				F32F82BD1E652C36006500F8 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +546,7 @@
 		};
 		F3949C661E642C180017FCE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505666D1BAB7CF7B899D2D8B /* Pods-LSPDouYuTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -430,6 +562,7 @@
 		};
 		F3949C671E642C180017FCE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85C4974840A8D97C9283B22F /* Pods-LSPDouYuTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
