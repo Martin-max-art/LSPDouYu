@@ -11,6 +11,7 @@ import UIKit
 class LSRecommendViewModel: NSObject {
    //MARK:-懒加载属性
     lazy var anchorGroups : [LSAnchorGroup] = [LSAnchorGroup]()
+    lazy var cycleModels : [LSCycleModel] = [LSCycleModel]()
     fileprivate lazy var bigDataGroup : LSAnchorGroup = LSAnchorGroup()
     fileprivate lazy var prettyGroup : LSAnchorGroup = LSAnchorGroup()
 }
@@ -18,6 +19,7 @@ class LSRecommendViewModel: NSObject {
 //MARK:--发送网络请求
 extension LSRecommendViewModel {
     
+    //请求推荐的数据
     func requestData(finishCallBack : @escaping () -> ()){
         
         //0.定义参数
@@ -92,6 +94,9 @@ extension LSRecommendViewModel {
                 let group = LSAnchorGroup(dict: dict)
                 self.anchorGroups.append(group)
             }
+//            for group in self.anchorGroups{
+//                print(group.tag_name)
+//            }
             //出组
             dis_group.leave()
              //print("第三组")
@@ -101,6 +106,23 @@ extension LSRecommendViewModel {
             //print("完成")
             self.anchorGroups.insert(self.prettyGroup, at: 0)
             self.anchorGroups.insert(self.bigDataGroup, at: 0)
+            finishCallBack()
+        }
+    }
+    
+    //请求无线轮播
+    func requestCycleData(finishCallBack : @escaping () -> ()) {
+        NetworkTools.requestData(.GET, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { (result) in
+//            print(result)
+            //1.获取整体字典数据
+            guard let resultDic = result as? [String : NSObject],
+                  let dataArray = resultDic["data"] as? [[String : NSObject]] else {return}
+            
+            //2.字典转模型对象
+            for dic in dataArray{
+                self.cycleModels.append(LSCycleModel(dict: dic))
+            }
+
             finishCallBack()
         }
     }

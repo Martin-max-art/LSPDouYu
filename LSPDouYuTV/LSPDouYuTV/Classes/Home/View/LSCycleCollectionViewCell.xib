@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LSCycleCollectionViewCell" customModule="LSPDouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="VSU-7C-VV2">
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="122"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWt-op-4rT">
+                        <rect key="frame" x="0.0" y="92" width="294" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpZ-Fs-WSd">
+                                <rect key="frame" x="15" y="7" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UpZ-Fs-WSd" firstAttribute="leading" secondItem="MWt-op-4rT" secondAttribute="leading" constant="15" id="Pfu-GD-lBE"/>
+                            <constraint firstItem="UpZ-Fs-WSd" firstAttribute="centerY" secondItem="MWt-op-4rT" secondAttribute="centerY" id="WOX-W4-w4Q"/>
+                            <constraint firstAttribute="height" constant="30" id="XWt-6n-9vC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VSU-7C-VV2" secondAttribute="trailing" id="7k9-Nw-acO"/>
+                <constraint firstItem="VSU-7C-VV2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Meb-sr-2io"/>
+                <constraint firstItem="MWt-op-4rT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aXL-YI-Ws7"/>
+                <constraint firstAttribute="bottom" secondItem="MWt-op-4rT" secondAttribute="bottom" id="pMb-WT-ml7"/>
+                <constraint firstAttribute="trailing" secondItem="MWt-op-4rT" secondAttribute="trailing" id="vHH-Fn-l5H"/>
+                <constraint firstAttribute="bottom" secondItem="VSU-7C-VV2" secondAttribute="bottom" id="vvl-rw-33x"/>
+                <constraint firstItem="VSU-7C-VV2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ybP-ad-koI"/>
+            </constraints>
+            <size key="customSize" width="294" height="122"/>
+            <connections>
+                <outlet property="iconImageView" destination="VSU-7C-VV2" id="SOZ-fI-hAy"/>
+                <outlet property="titleLabel" destination="UpZ-Fs-WSd" id="pqS-eq-idD"/>
+            </connections>
+            <point key="canvasLocation" x="-201" y="41"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>

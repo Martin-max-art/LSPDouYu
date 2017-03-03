@@ -21,6 +21,8 @@ class LSAnchorGroup: NSObject {
         }
     }
     
+    var icon_url : String?
+    
     var tag_name : String?
     
     var icon_name : String?

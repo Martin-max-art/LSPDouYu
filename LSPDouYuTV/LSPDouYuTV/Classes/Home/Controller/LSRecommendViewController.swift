@@ -13,6 +13,11 @@ private let kItemW : CGFloat = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH : CGFloat = kItemW * 3 / 4
 private let kPrettyItemH : CGFloat = kItemW * 4 / 3
 private let kHeaderViewH: CGFloat = 50
+
+private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH: CGFloat = 90
+
+
 private let KNormalCellId = "KNormalCellId"
 private let KPrettyCellId = "KPrettyCellId"
 private let KHeadViewCellId = "KHeadViewCellId"
@@ -44,7 +49,17 @@ class LSRecommendViewController: UIViewController {
         return collectionView
     }()
     
+    fileprivate lazy var cycleView : LSRecommendCycleView = {
+       let cycleView = LSRecommendCycleView.recommendCycleView()
+           cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     
+    fileprivate lazy var gameView : LSRecommendGameView = {
+       let gameView = LSRecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
     
     
     
@@ -66,17 +81,37 @@ extension LSRecommendViewController{
         //1.将UICollectionView添加到控制器的View中
         view.addSubview(collectionView)
        
+        //2.将cycleView添加到UICollectionView
+        collectionView.addSubview(cycleView)
+        
+        //3.将gameView添加到CollectionView
+        collectionView.addSubview(gameView)
+        
+        //4.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
 //MARK:--请求数据
 extension LSRecommendViewController{
     
+    
     fileprivate func loadData(){
-         recommendVM.requestData { 
+        //1.请求推荐数据
+         recommendVM.requestData {
+            
             self.collectionView.reloadData()
+            
+            //将数据传递给GameView
+            self.gameView.groups = self.recommendVM.anchorGroups
+        }
+        
+        //2.请求无线轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
+
 }
 
 
