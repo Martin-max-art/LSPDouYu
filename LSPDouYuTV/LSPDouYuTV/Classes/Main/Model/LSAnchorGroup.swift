@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LSAnchorGroup: NSObject {
+class LSAnchorGroup: LSBaseGameModel {
     
     var room_list : [[String : NSObject]]?{
         didSet{
@@ -21,22 +21,10 @@ class LSAnchorGroup: NSObject {
         }
     }
     
-    var icon_url : String?
-    
-    var tag_name : String?
-    
     var icon_name : String?
     
     lazy var anchors : [LSAnchorModel] = [LSAnchorModel]()
     
-    override init() {
-        
-    }
-    
-    init(dict : [String : NSObject]) {
-        super.init()
-        setValuesForKeys(dict)
-    }
     override func setValue(_ value: Any?, forUndefinedKey key: String) {}
     
     /**

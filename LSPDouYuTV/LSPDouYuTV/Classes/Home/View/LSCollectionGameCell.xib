@@ -11,24 +11,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LSCollectionGameCell" customModule="LSPDouYuTV" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LSCollectionGameCell" customModule="LSPDouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="169"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="145" height="169"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owc-1u-htL">
-                        <rect key="frame" x="15" y="65" width="50" height="15"/>
+                        <rect key="frame" x="47.5" y="104.5" width="50" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M7G-dm-Op0">
-                        <rect key="frame" x="17.5" y="15" width="45" height="45"/>
+                        <rect key="frame" x="50" y="54" width="45" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="J3f-Fr-ckI"/>
-                            <constraint firstAttribute="width" constant="45" id="zv1-zL-XX5"/>
+                            <constraint firstAttribute="height" constant="45" id="TxK-tC-G8d"/>
+                            <constraint firstAttribute="width" constant="45" id="eZe-gu-FTt"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -37,21 +37,30 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uX6-Qo-15t">
+                        <rect key="frame" x="0.0" y="169" width="145" height="1"/>
+                        <color key="backgroundColor" white="0.37" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vg5-e3-KJl"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="owc-1u-htL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0y7-hT-tTz"/>
-                <constraint firstItem="owc-1u-htL" firstAttribute="top" secondItem="M7G-dm-Op0" secondAttribute="bottom" constant="5" id="NvP-j7-vWh"/>
-                <constraint firstItem="M7G-dm-Op0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="YdR-fx-IdC"/>
-                <constraint firstAttribute="bottom" secondItem="owc-1u-htL" secondAttribute="bottom" constant="10" id="dyy-uY-q64"/>
-                <constraint firstItem="M7G-dm-Op0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="v5M-dp-2Kj"/>
+                <constraint firstItem="M7G-dm-Op0" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="6cl-hy-Tve"/>
+                <constraint firstItem="owc-1u-htL" firstAttribute="top" secondItem="M7G-dm-Op0" secondAttribute="bottom" constant="5" id="CA9-yy-Dwq"/>
+                <constraint firstAttribute="trailing" secondItem="uX6-Qo-15t" secondAttribute="trailing" id="M4o-D9-dqv"/>
+                <constraint firstAttribute="bottom" secondItem="uX6-Qo-15t" secondAttribute="bottom" constant="-1" id="Yhe-qD-61r"/>
+                <constraint firstItem="uX6-Qo-15t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cja-sc-dL4"/>
+                <constraint firstItem="M7G-dm-Op0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fNi-3F-wNp"/>
+                <constraint firstItem="owc-1u-htL" firstAttribute="centerX" secondItem="M7G-dm-Op0" secondAttribute="centerX" id="j6a-iJ-3AA"/>
             </constraints>
-            <size key="customSize" width="110" height="100"/>
+            <size key="customSize" width="175" height="179"/>
             <connections>
                 <outlet property="iconImageView" destination="M7G-dm-Op0" id="YLC-QF-Z2Z"/>
                 <outlet property="titleLabel" destination="owc-1u-htL" id="Yrs-iG-du4"/>
             </connections>
-            <point key="canvasLocation" x="-83" y="23"/>
+            <point key="canvasLocation" x="-50.5" y="62.5"/>
         </collectionViewCell>
     </objects>
 </document>

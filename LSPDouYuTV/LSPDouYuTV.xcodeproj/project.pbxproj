@@ -19,6 +19,8 @@
 		F32F82C31E666C6A006500F8 /* LSCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32F82C11E666C6A006500F8 /* LSCollectionHeaderView.xib */; };
 		F32F82C61E667066006500F8 /* LSCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32F82C41E667066006500F8 /* LSCollectionNormalCell.swift */; };
 		F32F82C71E667066006500F8 /* LSCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F32F82C51E667066006500F8 /* LSCollectionNormalCell.xib */; };
+		F365787A1E69412A00F872C3 /* LSGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36578791E69412A00F872C3 /* LSGameModel.swift */; };
+		F365787C1E6942B100F872C3 /* LSBaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F365787B1E6942B100F872C3 /* LSBaseGameModel.swift */; };
 		F38928631E681BE000C3CEDA /* LSRecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38928621E681BE000C3CEDA /* LSRecommendCycleView.swift */; };
 		F38928651E681C1400C3CEDA /* LSRecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38928641E681C1400C3CEDA /* LSRecommendCycleView.xib */; };
 		F38928671E682BD200C3CEDA /* LSCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38928661E682BD200C3CEDA /* LSCycleModel.swift */; };
@@ -33,6 +35,7 @@
 		F3993CEB1E6908F100348E51 /* LSCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3993CE91E6908F100348E51 /* LSCollectionGameCell.swift */; };
 		F3993CEC1E6908F100348E51 /* LSCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3993CEA1E6908F100348E51 /* LSCollectionGameCell.xib */; };
 		F3993CEE1E6919BB00348E51 /* LSGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3993CED1E6919BB00348E51 /* LSGameViewController.swift */; };
+		F3993CF01E693E9400348E51 /* LSGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3993CEF1E693E9300348E51 /* LSGameViewModel.swift */; };
 		F3B8092A1E6677C500AF7F00 /* LSCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B809281E6677C500AF7F00 /* LSCollectionPrettyCell.swift */; };
 		F3B8092B1E6677C500AF7F00 /* LSCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B809291E6677C500AF7F00 /* LSCollectionPrettyCell.xib */; };
 		F3B8094F1E66B93A00AF7F00 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B8094E1E66B93A00AF7F00 /* NetworkTools.swift */; };
@@ -63,6 +66,8 @@
 		F32F82C11E666C6A006500F8 /* LSCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LSCollectionHeaderView.xib; path = ../../Home/View/LSCollectionHeaderView.xib; sourceTree = "<group>"; };
 		F32F82C41E667066006500F8 /* LSCollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCollectionNormalCell.swift; sourceTree = "<group>"; };
 		F32F82C51E667066006500F8 /* LSCollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSCollectionNormalCell.xib; sourceTree = "<group>"; };
+		F36578791E69412A00F872C3 /* LSGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSGameModel.swift; sourceTree = "<group>"; };
+		F365787B1E6942B100F872C3 /* LSBaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseGameModel.swift; sourceTree = "<group>"; };
 		F38928621E681BE000C3CEDA /* LSRecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSRecommendCycleView.swift; sourceTree = "<group>"; };
 		F38928641E681C1400C3CEDA /* LSRecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSRecommendCycleView.xib; sourceTree = "<group>"; };
 		F38928661E682BD200C3CEDA /* LSCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCycleModel.swift; sourceTree = "<group>"; };
@@ -79,6 +84,7 @@
 		F3993CE91E6908F100348E51 /* LSCollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCollectionGameCell.swift; sourceTree = "<group>"; };
 		F3993CEA1E6908F100348E51 /* LSCollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSCollectionGameCell.xib; sourceTree = "<group>"; };
 		F3993CED1E6919BB00348E51 /* LSGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSGameViewController.swift; sourceTree = "<group>"; };
+		F3993CEF1E693E9300348E51 /* LSGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSGameViewModel.swift; sourceTree = "<group>"; };
 		F3B809281E6677C500AF7F00 /* LSCollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSCollectionPrettyCell.swift; sourceTree = "<group>"; };
 		F3B809291E6677C500AF7F00 /* LSCollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSCollectionPrettyCell.xib; sourceTree = "<group>"; };
 		F3B8094E1E66B93A00AF7F00 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F38928661E682BD200C3CEDA /* LSCycleModel.swift */,
+				F36578791E69412A00F872C3 /* LSGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 			children = (
 				F3B809551E66C8C900AF7F00 /* LSAnchorGroup.swift */,
 				F3B809571E66CD1F00AF7F00 /* LSAnchorModel.swift */,
+				F365787B1E6942B100F872C3 /* LSBaseGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -237,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				F3B809511E66BCFE00AF7F00 /* LSRecommendViewModel.swift */,
+				F3993CEF1E693E9300348E51 /* LSGameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -445,12 +454,15 @@
 			files = (
 				F32F82B51E651352006500F8 /* UIBarButtonItem+Extension.swift in Sources */,
 				F32F82B21E650DAF006500F8 /* LSHomeViewController.swift in Sources */,
+				F365787A1E69412A00F872C3 /* LSGameModel.swift in Sources */,
 				F3993CE61E6901D400348E51 /* LSRecommendGameView.swift in Sources */,
 				F3B809581E66CD1F00AF7F00 /* LSAnchorModel.swift in Sources */,
+				F3993CF01E693E9400348E51 /* LSGameViewModel.swift in Sources */,
 				F3E13D9D1E6445460053978C /* LSMainViewController.swift in Sources */,
 				F32F82B71E651BD7006500F8 /* LSPageTitleView.swift in Sources */,
 				F32F82C21E666C6A006500F8 /* LSCollectionHeaderView.swift in Sources */,
 				F3E2E1831E66F22E00CA8965 /* LSBaseCollectionViewCell.swift in Sources */,
+				F365787C1E6942B100F872C3 /* LSBaseGameModel.swift in Sources */,
 				F3B809561E66C8C900AF7F00 /* LSAnchorGroup.swift in Sources */,
 				F389286A1E6830C500C3CEDA /* LSCycleCollectionViewCell.swift in Sources */,
 				F32F82BB1E6528AD006500F8 /* LSPageContentView.swift in Sources */,

@@ -102,8 +102,19 @@ extension LSRecommendViewController{
             
             self.collectionView.reloadData()
             
+            //2.将数据传递给gameView
+            var groups = self.recommendVM.anchorGroups
+            //1.移除前两组数据
+            groups.remove(at: 0)
+            groups.remove(at: 0)
+            
+            //2.添加更多数组
+            let moreGroup = LSAnchorGroup()
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
             //将数据传递给GameView
-            self.gameView.groups = self.recommendVM.anchorGroups
+            self.gameView.groups = groups
         }
         
         //2.请求无线轮播数据

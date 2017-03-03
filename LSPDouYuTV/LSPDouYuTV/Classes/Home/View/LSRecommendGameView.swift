@@ -16,17 +16,10 @@ class LSRecommendGameView: UIView {
     @IBOutlet weak var collectionView: UICollectionView!
     
     //数据属性
-    var groups : [LSAnchorGroup]?{
+    var groups : [LSBaseGameModel]?{
         didSet{
             
-            //1.移除前两组数据
-            groups?.remove(at: 0)
-            groups?.remove(at: 0)
-            
-            //2.添加更多数组
-            let moreGroup = LSAnchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
+           
             
             //3.刷新表格
             self.collectionView.reloadData()
@@ -66,7 +59,7 @@ extension LSRecommendGameView : UICollectionViewDataSource{
         
         let group = groups?[indexPath.item]
         
-        cell.group = group
+        cell.baseGameModel = group
         
         return cell;
     }
