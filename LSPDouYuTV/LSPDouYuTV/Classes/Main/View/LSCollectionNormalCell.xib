@@ -47,9 +47,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iv-jw-dTc">
-                        <rect key="frame" x="208" y="123" width="77" height="16"/>
+                        <rect key="frame" x="218" y="123" width="67" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <state key="normal" title="124561在线" image="Image_online"/>
+                        <state key="normal" title="6666在线" image="Image_online"/>
                     </button>
                 </subviews>
             </view>

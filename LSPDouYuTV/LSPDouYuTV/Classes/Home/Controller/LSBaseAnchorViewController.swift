@@ -21,7 +21,7 @@ fileprivate let KNormalCellId = "KNormalCellId"
 let KPrettyCellId = "KPrettyCellId"
 fileprivate let KHeadViewCellId = "KHeadViewCellId"
 
-class LSBaseAnchorViewController: UIViewController {
+class LSBaseAnchorViewController: LSBaseViewController {
 
     //MARK: 定义属性
     var baseVM : LSBaseViewModel!
@@ -59,8 +59,14 @@ class LSBaseAnchorViewController: UIViewController {
 }
 //MARK: - 设置UI界面
 extension LSBaseAnchorViewController {
-    func setupUI(){
+    override func setupUI(){
+        
+        //1.给父类中的内容View的引用进行赋值
+        contentView = collectionView
+        
         view.addSubview(collectionView)
+        
+        super.setupUI()
     }
 }
 
@@ -75,22 +81,67 @@ extension LSBaseAnchorViewController {
 //MARK: - 遵守UICollectionView的数据源 和  代理协议
 extension LSBaseAnchorViewController : UICollectionViewDataSource,UICollectionViewDelegate{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
+        if baseVM == nil {
+            return 1
+        }
+        
         return baseVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        if baseVM == nil {
+            return 20
+        }
         return baseVM.anchorGroups[section].anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KNormalCellId, for: indexPath) as! LSCollectionNormalCell
+        
+        if baseVM == nil {
+            return cell
+        }
+        
         cell.anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
         return cell;
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         //1.取出HeaderView
         let headView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: KHeadViewCellId, for: indexPath) as! LSCollectionHeaderView
+        
+        if baseVM == nil {
+            return headView
+        }
+        
         //2.给headView设置数据
         headView.group = baseVM.anchorGroups[indexPath.section]
         return headView
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+        //1.取出主播的信息
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        //2.判断是秀场房间还是普通房间
+        anchor.isVertical == 0 ? pushNormalRoomVc() : presentShowRoomVC()
+    }
+    
+    fileprivate func presentShowRoomVC(){
+        //1.创建showRoomVC
+        let showRoomVc = LSRoomShowViewController()
+        
+        //2.以Modal方式弹出
+        present(showRoomVc, animated: true, completion: nil)
+    }
+    fileprivate func pushNormalRoomVc(){
+        
+        //1.创建NormalRoomVc
+        let normalRoomVc = LSRoomNormalViewController()
+        
+        //2.push到normalVc
+        navigationController?.pushViewController(normalRoomVc, animated: true)
     }
 }

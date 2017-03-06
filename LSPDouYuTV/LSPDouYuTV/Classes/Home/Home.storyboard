@@ -31,7 +31,7 @@
         <!--首页-->
         <scene sceneID="cYv-72-ruT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lZ1-OH-8dU" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lZ1-OH-8dU" customClass="LSCustomNavigationController" customModule="LSPDouYuTV" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="HSo-rL-0fM">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>

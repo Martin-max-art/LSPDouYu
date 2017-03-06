@@ -18,7 +18,7 @@ fileprivate let kGameViewH : CGFloat = 90
 fileprivate let kGameCellID = "kGameCellID"
 fileprivate let kCellHeadViewID = "kCellHeadViewID"
 
-class LSGameViewController: UIViewController {
+class LSGameViewController: LSBaseViewController {
 
     fileprivate lazy var gameViewModel : LSGameViewModel = LSGameViewModel()
     
@@ -71,8 +71,12 @@ class LSGameViewController: UIViewController {
 
 //MARK: - 设置UI界面
 extension LSGameViewController {
-    fileprivate func setupUI(){
+    override func setupUI(){
        
+         contentView = collectionView
+        
+        super.setupUI()
+        
         //1.添加UICollectionView
          view.addSubview(collectionView)
         
@@ -95,6 +99,9 @@ extension LSGameViewController {
             
             //2.展示常用游戏
             self.gameView.groups = Array(self.gameViewModel.games[0..<10])
+            
+            //3.数据请求完成
+            self.loadDataFinished()
         }
     }
 }

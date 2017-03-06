@@ -80,7 +80,7 @@ extension LSRecommendViewModel {
         
         //3.请求2-12部分游戏数据
         dis_group.enter()
-        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
+        loadAnchorData(isGroupData: true, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             //出组
             dis_group.leave()
         }

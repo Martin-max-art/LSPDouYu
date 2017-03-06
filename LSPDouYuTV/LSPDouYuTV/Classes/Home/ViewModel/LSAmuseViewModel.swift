@@ -17,6 +17,6 @@ extension LSAmuseViewModel {
     
     func loadAmuseData(finishedCallBack : @escaping () -> ()){
         
-        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", finishedCallback: finishedCallBack)
+        loadAnchorData(isGroupData: true, URLString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", finishedCallback: finishedCallBack)
     }
 }
